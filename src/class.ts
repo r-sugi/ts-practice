@@ -25,7 +25,7 @@ class Dog extends Creature {
 }
 
 class Human extends Creature {
-  name: string
+  protected name: string
   constructor(name: string) {
     super(2, 2)
     this.name = name
@@ -40,3 +40,17 @@ class Human extends Creature {
 
 const dog = new Dog('bow-wow')
 const human = new Human('Hanako')
+
+class Taro extends Human {
+  constructor() {
+    super('Taro')
+  }
+  public greeting() {
+    console.log(this.greet()) // 継承関係ではprotectedメンバーを実行可能
+  }
+}
+
+const taro = new Taro()
+taro.greeting()
+taro.greet() // protected メンバーは実行不可
+taro.shakeHands()
