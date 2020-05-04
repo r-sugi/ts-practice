@@ -33,3 +33,21 @@ const userB: User4 = {
 }
 const x1 = userB.enquete['exercise_habits']
 const y1 = userB.enquete['time_of_sleeping']
+
+
+type Question = 'exercise_habits' |  'time_of_sleeping'
+type UserC = {
+  name: string,
+  enquete: { [K in Question]?: Answer }
+}
+
+const userC: UserC = {
+  name: 'Taro',
+  enquete: {
+    exercise_habits: 'entirely',
+    time_of_sleeping: 'few'
+  }
+}
+
+const x3 = userC.enquete['exercise_habits']
+// const x4 = userC.enquete['steps_per_data'] // Error
