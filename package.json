@@ -1,0 +1,25 @@
+{
+  "name": "ts-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsnd": "tsnd --no-notify --respawn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-sugi/ts-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r-sugi/ts-practice/issues"
+  },
+  "homepage": "https://github.com/r-sugi/ts-practice#readme",
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.44"
+  },
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}
